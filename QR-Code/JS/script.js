@@ -8,7 +8,7 @@ function generateQrCode(){
     if(!qrCodeInputValues) return;
 
     qrCodeBtn.innerText = 'Gerando Código...';
-    qrCodeIMG.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example`;
+    qrCodeIMG.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrCodeInputValues}`;
     qrCodeIMG.addEventListener('load', ()=>{
         container.classList.add('active');
         qrCodeBtn.innerText = 'Código Gerado!';
