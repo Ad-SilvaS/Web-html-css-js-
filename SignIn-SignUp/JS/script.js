@@ -26,5 +26,5 @@ tl.from('.left-card', {
 }, '-= .2'),
 tl.from('.right-card', {
     opacity: 0,
-    y: -2000
+    y: 2000
 }, '-= .2')
